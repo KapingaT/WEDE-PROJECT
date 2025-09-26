@@ -28,3 +28,7 @@ Typography
 
 Use big, round, friendly fonts that look inviting
 Layout and Design
+
+UPDATES 
+the updates i have made is i changed the layout of my website i changed the background colours and i added more imaged and a added a web page called sales 
+i added borders to each of my pages 
