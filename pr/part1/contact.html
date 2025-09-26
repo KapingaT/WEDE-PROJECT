@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.bodyI {
+      border: 20px solid pink;
+      padding: 20px;
+      background-color: #fffafc;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: darkslategray;
+    }
+
+    
+    .form-map-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .form-map-container iframe {
+      flex: 1;             /* each takes up half */
+      height: 600px;       /* set same height */
+      border: 0;           /* remove default borders */
+      border-radius: 8px;  /* rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      width: 400px;
+      height: 500px;
+      border: 4px solid whitesmoke;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body>
-    <nav>
-        <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+<body class="bodyI">
+  <nav>
+         <a href="http://127.0.0.1:5500/product.html">Product</a>
+        <a href="http://127.0.0.1:5500/contact.html">Contact1</a>
         <a href="http://127.0.0.1:5500/about.html">About</a>
         <a href="http://127.0.0.1:5500/home.html">home</a>
+        <a href="http://127.0.0.1:5500/sales.html">Sales</a>
     </nav>
-    <h3>LETS TRAVEL BACK IN TIME </h3>
-    <form action="action_page.php" method="GET">
-        <div>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="spongebob@email.com" required>
-            <br>
-            <label for="message">Message:</label>
-            <input type="text" id="message" name="message" placeholder="Hello!" required>
-            <br>
-             <input type="submit" value="Submit">
-        </div>
-    </form>
-    <img src="IMG/OIP.webp" alt="">
+  <h3>LETS TRAVEL BACK IN TIME</h3>
+  <h1 class="h1Heading"> CONTACT </h1>
+
+  
+  <div class="form-map-container">
+    <!-- Google Form -->
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLScn9INn3vvWOOaLroG_kQG1mbmmbwzGLf9mg1rGKQC_aZgZKw/viewform?embedded=true">
+      Loading…
+    </iframe>
+
+    <!-- Google Map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106058.44099788288!2d18.51364845878315!3d-33.829695282162845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc571a33692941%3A0x3426a4a9413bb53!2sDurbanville%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1758529335019!5m2!1sen!2sza" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  
+  <img src="IMG/example bakery.jpeg" alt="Bakery Example">
 </body>
 </html>

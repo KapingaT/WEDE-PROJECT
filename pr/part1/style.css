@@ -1,0 +1,155 @@
+.bodyH{
+     border: 20px solid orange;   
+      padding: 20px;             /* space between border and content */
+      background-color:oldlace;
+}
+.bodyaT{
+  border: 20px solid rgb(114, 114, 197);   /* thick pink border */
+      padding: 20px;             /* space between border and content */
+      background-color:#d8f8f5;
+}
+.bodyPRr {
+      border: 20px solid yellowgreen;   /* thick pink border */
+      padding: 20px;             /* space between border and content */
+      background-color:lemonchiffon;
+         }
+.bodyCo {
+      border: 20px solid pink;   /* thick pink border */
+      padding: 20px;             /* space between border and content */
+      background-color: #fffafc;
+}
+.bodySA {
+      border: 20px solid rgb(19, 226, 147);   /* thick pink border */
+      padding: 20px;             /* space between border and content */
+      background-color: #9ff1cb;
+}
+
+
+
+
+ .h1Heading {
+       display: block;               /* make heading behave like a block */
+      width: 100%;                  /* stretch across the whole page */
+      background-color: grey;  /* background color */
+      color: rgb(108, 234, 238);              /* text color */
+      text-align: center;           /* center the text */
+      padding: 20px;                /* space inside the block */
+      margin: 0;                    
+      border-bottom: 4px solid rgb(192, 152, 219); 
+ }
+    /* Fade-in animation for the whole nav bar */
+   /* Navigation bar */
+nav {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  animation: fadeDown 1s ease-in-out;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: yellow;
+  transform: scale(1.2);
+  animation: bounce 0.6s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: yellow;
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-5px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* ---------------- RESPONSIVE RULES ---------------- */
+
+/* Medium screens (tablets, ≤ 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens (phones, ≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    display: block;     /* stack links vertically */
+    margin: 10px 0;
+  }
+
+  .menu-item {
+    width: 100%;        /* each item takes full width */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra small screens (≤ 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+
